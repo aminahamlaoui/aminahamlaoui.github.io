@@ -131,7 +131,7 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 <section class="flyer">
   <h2>Notre Flyer</h2>
   <p>Découvrez nos services de formation et d’accompagnement.</p>
-  <img src="flyer.jpg" alt="Flyer Teranza Learning">
+  <img src="flyr.png" alt="Flyer Teranza Learning">
 </section>
 <section class="contact">
   <h2>Contact</h2>
