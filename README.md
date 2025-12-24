@@ -45,6 +45,57 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       border-radius: 6px;
     }
   </style>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  /* TITRES EN VERT */
+  h1, h2, h3 {
+    color: #16a34a; /* vert */
+  }
+
+  section {
+    background: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  .contact {
+    background-color: #e5e7eb;
+  }
+
+  .flyer {
+    text-align: center;
+  }
+
+  .flyer img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+
+  footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+</style>
+
 </head>
 <body>
 
@@ -77,7 +128,11 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
     <li>Aide aux devoirs (primaire, collège)</li>
   </ul>
 </section>
-
+<section class="flyer">
+  <h2>Notre Flyer</h2>
+  <p>Découvrez nos services de formation et d’accompagnement.</p>
+  <img src="flyer.jpg" alt="Flyer Teranza Learning">
+</section>
 <section class="contact">
   <h2>Contact</h2>
   <p>
@@ -92,3 +147,6 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 
 </body>
 </html>
+
+
+
