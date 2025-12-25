@@ -3,150 +3,195 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Teranza – Entreprise multifonctionnelle</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teranza – Présentation</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      background: #f5f6f8;
+      color: #222;
     }
     header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
+      padding: 60px 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
     }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 15px; }
+    h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    p { margin-bottom: 15px; color: #555; }
     section {
-      background: #fff;
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 30px;
+      padding: 50px 0;
+      background: #ffffff;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fafafa;
+      padding: 25px;
       border-radius: 8px;
+      border: 1px solid #e5e5e5;
     }
-    h2 {
-      color: #1f2937;
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
     }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      background-color: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+    .hero-box {
+      background: #fafafa;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
     }
     .contact {
-      background-color: #e5e7eb;
-      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
       border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+    }
+    form button {
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    @media (max-width: 768px) {
+      .hero, .contact { grid-template-columns: 1fr; }
     }
   </style>
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
-  /* TITRES EN VERT */
-  h1, h2, h3 {
-    color: #16a34a; /* vert */
-  }
-
-  section {
-    background: white;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 8px;
-  }
-
-  .contact {
-    background-color: #e5e7eb;
-  }
-
-  .flyer {
-    text-align: center;
-  }
-
-  .flyer img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
-  }
-
-  footer {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-  }
-</style>
-
 </head>
 <body>
 
-<header>
-  <h1>Teranza</h1>
-  <p>Entreprise multifonctionnelle</p>
-</header>
+  <header>
+    <div class="container hero">
+      <div>
+        <h1>Teranza – Accompagnement éducatif et soutien scolaire</h1>
+        <p>
+          Teranza est une micro-entreprise multifonctionnelle spécialisée dans
+          l'accompagnement pédagogique et le soutien scolaire.
+        </p>
+        <p>
+          Nous proposons des solutions adaptées aux besoins des élèves, en
+          présentiel à domicile ou en ligne via la plateforme Google Meet.
+        </p>
+      </div>
+      <div class="hero-box">
+        <h2>Notre mission</h2>
+        <p>• Favoriser la réussite scolaire à tous les niveaux</p>
+        <p>• Offrir un encadrement sérieux et personnalisé</p>
+        <p>• S'adapter au rythme et aux objectifs de chaque élève</p>
+      </div>
+    </div>
+  </header>
 
-<section>
-  <h2>Présentation</h2>
-  <p>
-    Teranza est une entreprise multifonctionnelle proposant des services variés
-    dans le domaine de la formation et de l’accompagnement éducatif.
-    Notre objectif est d’offrir des solutions adaptées aux besoins des élèves et des familles.
-  </p>
-</section>
+  <section>
+    <div class="container">
+      <h2>À propos de Teranza</h2>
+      <p>
+        Teranza accompagne les élèves de tous niveaux à travers des cours
+        particuliers et des classes spécialisées, avec une approche pédagogique
+        claire, structurée et efficace.
+      </p>
+    </div>
+  </section>
 
-<section>
-  <h2>Teranza Learning</h2>
-  <p>
-    Teranza Learning est le pôle formation de Teranza.
-    Nous proposons un accompagnement pédagogique personnalisé pour aider les élèves
-    à progresser et à réussir.
-  </p>
+  <section>
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Cours particuliers</h3>
+          <p>
+            Cours de mathématiques, aide aux devoirs et langue arabe, dispensés à
+            domicile ou en ligne.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Enseignement en ligne</h3>
+          <p>
+            Cours à distance via Google Meet, accessibles partout et adaptés à
+            tous les niveaux scolaires.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Classes de préparation</h3>
+          <p>
+            Préparation encadrée pour les examens du Brevet et du Baccalauréat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Nos cours</h3>
-  <ul>
-    <li>Cours particuliers en mathématiques</li>
-    <li>Cours d’arabe</li>
-    <li>Aide aux devoirs (primaire, collège)</li>
-  </ul>
-</section>
-<section class="flyer">
-  <h2>Notre Flyer</h2>
-  <p>Découvrez nos services de formation et d’accompagnement.</p>
-  <img src="flyr.png" alt="Flyer Teranza Learning">
-</section>
-<section class="contact">
-  <h2>Contact</h2>
-  <p>
-    📞 Téléphone : <strong>07 66 80 51 23</strong><br>
-    📍 Cours à domicile ou à distance (selon besoins)
-  </p>
-</section>
+  <section>
+    <div class="container">
+      <h2>Tarification</h2>
+      <p>
+        Les tarifs commencent à partir de <strong>15 € par heure</strong> et
+        varient en fonction du niveau et du type d'accompagnement choisi.
+      </p>
+    </div>
+  </section>
 
-<footer>
-  © 2025 Teranza – Teranza Learning | Tous droits réservés
-</footer>
+  <section>
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card">
+          <h3>Coordonnées</h3>
+          <p>Email : contact@teranza.com</p>
+          <p>Téléphone : À renseigner</p>
+          <p>Mode : Présentiel & En ligne</p>
+        </div>
+        <div class="card">
+          <h3>Formulaire de contact</h3>
+          <form>
+            <input type="text" placeholder="Nom et prénom" required />
+            <input type="email" placeholder="Adresse e-mail" required />
+            <textarea rows="4" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 – Teranza | Tous droits réservés
+  </footer>
 
 </body>
 </html>
+
+
+
 
 
 
