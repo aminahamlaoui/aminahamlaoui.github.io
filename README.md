@@ -113,50 +113,53 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 
   <section>
     <div class="container">
-      <h2>À propos de Teranza</h2>
-      <p>
-        Teranza accompagne les élèves de tous niveaux à travers des cours
-        particuliers et des classes spécialisées, avec une approche pédagogique
-        claire, structurée et efficace.
-      </p>
-    </div>
-  </section>
+      <h2>Tarification</h2>
+      <div style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:30px; align-items:stretch;">
+        
+        <!-- Bloc texte -->
+        <div class="card">
+          <h3 style="font-size:1.4rem; margin-bottom:10px;">Tarifs des cours particuliers</h3>
+          <p style="font-size:1.1rem;">
+            Les cours Teranza sont proposés à partir de
+            <strong style="font-size:1.3rem;">15 € / heure</strong>.
+          </p>
+          <p>
+            Nous trouvons une solution adaptée à chaque élève, quels que soient
+            son niveau, ses objectifs et le mode d’enseignement choisi
+            (à domicile ou en ligne).
+          </p>
 
-  <section>
-    <div class="container">
-      <h2>Nos services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Cours particuliers</h3>
-          <p>
-            Cours de mathématiques, aide aux devoirs et langue arabe, dispensés à
-            domicile ou en ligne.
-          </p>
+          <div style="margin-top:20px;">
+            <h4>Flexibilité totale</h4>
+            <p>
+              Commencez par une première séance et poursuivez uniquement si vous
+              êtes satisfait(e). La fréquence et la durée des cours sont
+              entièrement personnalisables.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Enseignement en ligne</h3>
-          <p>
-            Cours à distance via Google Meet, accessibles partout et adaptés à
-            tous les niveaux scolaires.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Classes de préparation</h3>
-          <p>
-            Préparation encadrée pour les examens du Brevet et du Baccalauréat.
-          </p>
+
+        <!-- Carte tarif -->
+        <div class="card" style="background:#f3f8ff; border:1px solid #d6e4ff;">
+          <h3 style="font-size:1.6rem; margin-bottom:15px;">
+            À partir de <span style="font-size:2rem;">15 € / h</span>
+          </h3>
+
+          <p><strong>Inclus :</strong></p>
+          <ul style="list-style:none; padding-left:0; line-height:1.8;">
+            <li>✔ Cours particuliers tous niveaux</li>
+            <li>✔ Mathématiques, aide aux devoirs et langue arabe</li>
+            <li>✔ À domicile ou en ligne (Google Meet)</li>
+            <li>✔ Préparation Brevet et Baccalauréat</li>
+            <li>✔ Suivi personnalisé de l’élève</li>
+            <li>✔ Classes individuelles ou en petit groupe</li>
+          </ul>
+
+          <button style="margin-top:20px; padding:14px; width:100%; border:none; border-radius:8px; font-size:1rem; cursor:pointer;">
+            Je me renseigne
+          </button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Tarification</h2>
-      <p>
-        Les tarifs commencent à partir de <strong>15 € par heure</strong> et
-        varient en fonction du niveau et du type d'accompagnement choisi.
-      </p>
     </div>
   </section>
 
@@ -189,6 +192,10 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 
 </body>
 </html>
+
+ 
+
+  
 
 
 
