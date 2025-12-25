@@ -11,8 +11,8 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
-      background: #f5f6f8;
-      color: #222;
+      background: #d4f7d4; /* vert clair */
+      color: #000; /* paragraphe en noir */
     }
     header {
       padding: 60px 20px;
@@ -24,9 +24,23 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       margin: auto;
       padding: 0 20px;
     }
-    h1 { font-size: 2.2rem; margin-bottom: 15px; }
-    h2 { font-size: 1.6rem; margin-bottom: 10px; }
-    p { margin-bottom: 15px; color: #555; }
+    h1 { 
+      font-size: 2.2rem; 
+      margin-bottom: 15px; 
+      color: #fff; /* titre en blanc */
+    }
+    h2 { 
+      font-size: 1.6rem; 
+      margin-bottom: 10px; 
+      color: #fff; /* titre en blanc */
+    }
+    h3, h4 {
+      color: #000; /* sous-titres en noir */
+    }
+    p { 
+      margin-bottom: 15px; 
+      color: #000; /* paragraphe en noir */
+    }
     section {
       padding: 50px 0;
       background: #ffffff;
@@ -155,8 +169,9 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
             <li>✔ Classes individuelles ou en petit groupe</li>
           </ul>
 
+          <!-- Bouton modifié -->
           <button style="margin-top:20px; padding:14px; width:100%; border:none; border-radius:8px; font-size:1rem; cursor:pointer;">
-            Je me renseigne
+            Contacter pour plus d’informations
           </button>
         </div>
       </div>
@@ -170,7 +185,7 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
         <div class="card">
           <h3>Coordonnées</h3>
           <p>Email : contact@teranza.com</p>
-          <p>Téléphone : À renseigner</p>
+          <p>Téléphone : 07 66 80 51 23</p>
           <p>Mode : Présentiel & En ligne</p>
         </div>
         <div class="card">
@@ -193,6 +208,11 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 </body>
 </html>
 
+  
+       
+
+       
+        
  
 
   
