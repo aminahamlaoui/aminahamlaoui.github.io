@@ -51,8 +51,8 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    .card {
-      background: #fafafa;
+    .card, .hero-box {
+      background: #f5e0a1; /* jaune sable */
       padding: 25px;
       border-radius: 8px;
       border: 1px solid #e5e5e5;
@@ -62,12 +62,6 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       grid-template-columns: 1.2fr 0.8fr;
       gap: 30px;
       align-items: center;
-    }
-    .hero-box {
-      background: #fafafa;
-      padding: 30px;
-      border-radius: 10px;
-      border: 1px solid #e5e5e5;
     }
     .contact {
       display: grid;
@@ -89,6 +83,10 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       border-radius: 6px;
       cursor: pointer;
       font-size: 1rem;
+      background-color: #f3d27a;
+    }
+    form button:hover {
+      background-color: #e0b84d;
     }
     footer {
       text-align: center;
@@ -98,6 +96,24 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
     }
     @media (max-width: 768px) {
       .hero, .contact { grid-template-columns: 1fr; }
+    }
+    /* Style bouton lien vers contact */
+    .btn-contact {
+      display:block;
+      margin-top:20px;
+      padding:14px;
+      width:100%;
+      border:none;
+      border-radius:8px;
+      font-size:1rem;
+      cursor:pointer;
+      text-align:center;
+      background-color:#f3d27a;
+      color:#000;
+      text-decoration:none;
+    }
+    .btn-contact:hover {
+      background-color: #e0b84d;
     }
   </style>
 </head>
@@ -154,7 +170,7 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
         </div>
 
         <!-- Carte tarif -->
-        <div class="card" style="background:#f3f8ff; border:1px solid #d6e4ff;">
+        <div class="card">
           <h3 style="font-size:1.6rem; margin-bottom:15px;">
             À partir de <span style="font-size:2rem;">15 € / h</span>
           </h3>
@@ -169,16 +185,16 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
             <li>✔ Classes individuelles ou en petit groupe</li>
           </ul>
 
-          <!-- Bouton modifié -->
-          <button style="margin-top:20px; padding:14px; width:100%; border:none; border-radius:8px; font-size:1rem; cursor:pointer;">
+          <!-- Bouton lien vers formulaire contact -->
+          <a href="#contact" class="btn-contact">
             Contacter pour plus d’informations
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <div class="container">
       <h2>Contact</h2>
       <div class="contact">
@@ -208,7 +224,9 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 </body>
 </html>
 
-  
+     
+   
+
        
 
        
