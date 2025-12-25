@@ -27,12 +27,12 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
     h1 { 
       font-size: 2.2rem; 
       margin-bottom: 15px; 
-      color: #d4f7d4; /* titre en vert clair */
+      color: #556B2F; /* vert militaire foncé */
     }
     h2 { 
       font-size: 1.6rem; 
       margin-bottom: 10px; 
-      color: #d4f7d4; /* titre en vert clair */
+      color: #556B2F; /* vert militaire foncé */
     }
     h3, h4 {
       color: #000; /* sous-titres en noir */
@@ -83,10 +83,11 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       border-radius: 6px;
       cursor: pointer;
       font-size: 1rem;
-      background-color: #f3d27a;
+      background-color: #d4f7d4; /* vert clair même que le fond */
+      color: #000;
     }
     form button:hover {
-      background-color: #e0b84d;
+      background-color: #b7e6b7; /* légèrement plus foncé au hover */
     }
     footer {
       text-align: center;
@@ -108,7 +109,7 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
       font-size:1rem;
       cursor:pointer;
       text-align:center;
-      background-color:#d4f7d4; /* vert clair, même que le fond de la page */
+      background-color:#d4f7d4; /* vert clair */
       color:#000;
       text-decoration:none;
     }
@@ -224,8 +225,10 @@ Site de présentation et de ressources en ligne, créé avec GitHub Pages
 </body>
 </html>
 
+  
+  
+   
 
-    
      
    
 
